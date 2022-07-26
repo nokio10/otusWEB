@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = os.getenv('MYSITE_SECRET_KEY', '')
 DEBUG = ast.literal_eval(os.getenv('DEBUG', 'True'))
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
